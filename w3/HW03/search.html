@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>search</title>
+    </head>
+
+
+    <center>
+    <body>
+    	<div id = "title">TYPE IN THE LATITUDE AND LONGITUDE</div>
+    	<div id = "subtitle">It will show on the map!
+    	<br>
+    	<br></div>
+        <div id ="Latitude">Latitude
+            <input type="number" id="currentLat">
+        </div>
+
+        <div id ="Longitude">Longitude
+            <input type="number" id="currentLng">
+        </div>
+
+        <input type="submit" id="submit" value="go">
+
+        <div id="map"> </div>
+
+
+    </body>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <script src="js/search.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9QMSK_bCc4OY74M8Wf9clEosPCx37FRA&callback=initMap"
+        async defer> </script>
+
+    
+    </center>
+</html>
