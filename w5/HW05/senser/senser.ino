@@ -1,5 +1,5 @@
-
-const int analogInPin = A0;  
+const int trigPin = 2;
+const int echoPin = 4; 
 const int analogOutPin = 9; 
 int sensorLow = 0;
 int sensorHigh = 800;
@@ -7,12 +7,13 @@ int sensorValue = 0;
 int outputValue = 0;       
 
 void setup() {
+  
   Serial.begin(9600);
 }
 
 void loop() {
   // read the analog in value:
-  sensorValue = analogRead(analogInPin);
+  sensorValue = analogRead(trigPin);
   // map it to the range of the analog out:
   outputValue = map(sensorValue,sensorLow,sensorHigh, 0, 255);
   // change the analog out value:
